@@ -25,3 +25,23 @@
 #container a {
   text-decoration: none;
 }
+
+button{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 25px;
+  min-width: 100px;
+  transition: all .5S ease-in-out;
+  &.success{
+      background: green;
+      color: white;
+      &:hover{
+        transform: scale(1.2);
+      }
+  }
+
+  &.error{
+      background: red;
+      color: white;
+  }
+}
