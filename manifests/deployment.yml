@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ehyasinbit 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ehyasinbit
+  template:
+    metadata:
+      labels:
+        app: ehyasinbit 
+    spec:
+      containers:
+        - name: ehyasinbit 
+          image: b8it148.azurecr.io/ehyasinbit
+          ports:
+          - containerPort: 80
